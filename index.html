@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>SUDOKU</title>
+</head>
+<header>
+    <h1>
+        SUDOKU
+    </h1>
+    <div id="setup-game">
+        <div id="diff">
+            <h3>Difficulty :</h3>
+            <label><input type="radio" name="diff" id="diff-1" value="easy" checked>Easy</label>
+            <label><input type="radio" name="diff" id="diff-2" value="medium">Medium</label>
+            <label><input type="radio" name="diff" id="diff-3" value="hard">Hard</label>
+        </div>
+        <div id="time">
+            <h3>Time Limit :</h3>
+            <label><input type="radio" name="time" id="time-1" value="three" checked>3 MIN</label>
+            <label><input type="radio" name="time" id="time-2" value="five">5 MIN</label>
+            <label><input type="radio" name="time" id="time-3" value="ten">10 MIN</label>
+        </div>
+        <div id="theme"> 
+            <h3>Theme:</h3>
+            <label><input type="radio" name="theme" id="theme-1" value="light" checked>Light</label>
+            <label><input type="radio" name="theme" id="theme-2" value="dark">Dark</label>
+        </div>
+    </div>
+    <button id="start-btn">New Game!</button>
+    <button id="resume">Pause</button>
+</header> 
+<body>
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="lives"></p>
+    </div>
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+            <p id="seven">7</p>
+            <p id="eight">8</p>
+            <p id="nine">9</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+<footer>
+    <p>By Harsha ch.</p>
+</footer>
+</html>
